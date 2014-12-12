@@ -1,0 +1,1 @@
+{"publishable_key":"pk_test_evpO8dJTly3wZegA3VHBDlpL","secret_key":"sk_test_uheqxZhTOrQMmkY7YuzYRfRz","currency":"usd"}

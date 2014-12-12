@@ -1,0 +1,13 @@
+.ms-advanced-actions-down {
+	background-image: url('../../../../themes/Sugar/images/advanced_search.gif');
+}
+.ms-advanced-actions-up {
+	background-image: url('../../../../themes/Sugar/images/basic_search.gif');
+}
+
+#cb_scroll-listview {
+	margin-right: 0;
+}
+#ms-check-all-sel {
+	background-image: url('../../../../themes/Sugar/images/MoreDetail.png');
+}

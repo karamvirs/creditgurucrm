@@ -1,0 +1,23 @@
+<?php
+ // created: 2014-12-02 11:22:43
+$layout_defs["Contacts"]["subpanel_setup"]['pm_portalmessages_contacts'] = array (
+  'order' => 100,
+  'module' => 'pm_PortalMessages',
+  'subpanel_name' => 'default',
+  'sort_order' => 'asc',
+  'sort_by' => 'id',
+  'title_key' => 'LBL_PM_PORTALMESSAGES_CONTACTS_FROM_PM_PORTALMESSAGES_TITLE',
+  'get_subpanel_data' => 'pm_portalmessages_contacts',
+  'top_buttons' => 
+  array (
+    0 => 
+    array (
+      'widget_class' => 'SubPanelTopButtonQuickCreate',
+    ),
+    1 => 
+    array (
+      'widget_class' => 'SubPanelTopSelectButton',
+      'mode' => 'MultiSelect',
+    ),
+  ),
+);

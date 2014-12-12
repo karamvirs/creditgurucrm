@@ -1,0 +1,25 @@
+<?php
+// created: 2014-08-22 11:12:02
+$mod_strings = array (
+  'LBL_SSN' => 'SSN',
+  'LBL_EQUIFAX_ID' => 'Equifax id',
+  'LBL_TRANS_UNION_USERNAME' => 'Trans Union username',
+  'LBL_TRANS_UNION_PASSWORD' => 'Trans Union password',
+  'LBL_INSTRUCTIONS' => 'Filing Instructions',
+  'LBL_DETAILVIEW_PANEL1' => 'Credit report IDs',
+  'LBL_EDITVIEW_PANEL1' => 'Credit Report IDs',
+  'LBL_REFERRED_BY' => 'Referred by',
+  'LBL_AFFILIATE' => 'Affiliate',
+  'LBL_QUOTED_AMOUNT' => 'Quoted amount',
+  'LBL_PAID_AMOUNT' => 'Paid amount',
+  'LBL_BALANCE_AMOUNT' => 'Balance amount',
+  'LBL_EXPERIAN_ID' => 'Experian id',
+  'LBL_TRANS_UNION_ID' => 'Trans union id',
+  'LBL_EDITVIEW_PANEL2' => 'Amounts',
+  'LBL_REPORTS_TO' => 'Reports To:',
+  'LBL_CONTACTS' => 'Clients',
+  'LBL_LEADS' => 'Leads',
+  'LBL_CONTACT_ID' => 'Client ID',
+  'LBL_CONVERTED_CONTACT' => 'Converted Client:',
+  'LBL_POINT_OF_CONTACT' => 'Point of contact',
+);

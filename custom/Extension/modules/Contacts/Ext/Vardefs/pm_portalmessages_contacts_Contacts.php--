@@ -1,0 +1,12 @@
+<?php
+// created: 2014-12-02 11:22:43
+$dictionary["Contact"]["fields"]["pm_portalmessages_contacts"] = array (
+  'name' => 'pm_portalmessages_contacts',
+  'type' => 'link',
+  'relationship' => 'pm_portalmessages_contacts',
+  'source' => 'non-db',
+  'module' => 'pm_PortalMessages',
+  'bean_name' => false,
+  'side' => 'right',
+  'vname' => 'LBL_PM_PORTALMESSAGES_CONTACTS_FROM_PM_PORTALMESSAGES_TITLE',
+);

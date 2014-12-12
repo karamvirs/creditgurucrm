@@ -1,0 +1,138 @@
+MODULESURFER LICENSE AGREEMENT (BASIC VERSION).
+
+
+CLICKING THE "I ACCEPT" BOX, INSTALLING OR USING THE MODULESURFER SOFTWARE
+("SOFTWARE"), YOU EXPRESSLY DECLARE TO HAVE READ AND ACCEPTED ALL THE FOLLOWING
+TERMS AND CONDITIONS.
+
+
+1.0 Preamble
+
+1.1 Prerequisites
+
+The Software must be installed in a SugarCRM (TM) working installation
+("SugarCRM") whose version and edition are supported by the current release of
+the Software.
+
+The Software must be installed in SugarCRM through a free installation tool
+("Extension Manager") provided by "Dispage" (defined below), whose license and
+privacy informative report ("Privacy Report") are available from the
+Documentation area of the Website or upon request made to Email Support.
+
+
+1.2 Subject of the License
+
+ModuleSurfer is a Software for SugarCRM (TM) customization.
+
+ModuleSurfer has been designed and developed by
+
+Dispage - Patrizio Gelosi
+Via A. De Gasperi 91 
+P. Potenza Picena (MC) - Italy
+
+(Hereby referred to as "Dispage").
+
+Copyright (c) 2010-2012 Dispage.
+
+The Software is identified by the following resources ("Resources"):
+a) All the files that are copied into the SugarCRM directory ("SugarCRM
+Directory") or its sub-directories during the process of installation
+("Installation Process") of the Software.
+b) All the parts of code that are added to existing SugarCRM files during the
+Installation Process.
+
+Hereby, file and directory paths are to be intended as paths relative to the
+SugarCRM Directory path. 
+Resources may belong to two categories:
+(i) "Encrypted Files": files under the path
+'custom/include/ModuleSurfer/ListView/v3o/'
+(ii) "Plain Code": all Resources not belonging to the category in the point (i)
+
+The terms of this agreement apply to the Resources of category (i) and (ii)
+present in the SugarCRM Directory after the Software installation. Additionally,
+they apply to all the Software files that may be stored into paths different
+from the SugarCRM Directory (including, as non-exhaustive examples, the
+temporary directory where the files are stored after the download and the
+'cache/upload/upgrades/temp' directory) during the download, the Installation
+Process or the subsequent operation of SugarCRM application. In the case of
+Software files stored in different paths, the path location in the point (i)
+above is to be intended as path relative to the directory where the files are
+stored; in the case that Software files are compressed in an archive file, the
+path location refers to the relative path of the files compressed in the archive
+file.
+
+The Encrypted Files contain encrypted PHP code that is essential to the Software
+key features. Encrypted Files are subject to the additional restrictions
+indicated in Section 2.2 and need decryption keys ("Decryption Keys") to be
+correctly interpreted and to activate all the Software functionalities.
+
+Decryption Keys are automatically and silently downloaded by Extension Manager
+from the Website ("Key Refresh") each time a SugarCRM User ("SugarCRM User") log
+in SugarCRM. If for any reason the Key Refresh process fails, Encrypted Files
+are correctly decrypted still for the subsequent five (5) days since Decryption
+Keys are automatically stored in dispage cache directory.
+
+IMPORTANT: Key Refresh is one of the above-mentioned Website Services and is
+subject to the limitations indicated in Section 3.2 .
+
+
+2.0 License.
+
+2.1 "Plain Code" Resources.  The "Plain Code" Resources are released by Dispage
+under the GNU GENERAL PUBLIC LICENSE version 3 ("GPL3"), whose content is
+integral part of the SUGARCRM(TM) COMMUNITY EDITION project and is located at
+the path "LICENSE.txt". If the file is not present, see
+http://www.gnu.org/licenses or write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. The interactive user
+interfaces in modified source and object code versions of this program must
+display Appropriate Legal Notices, as required under Section 5 of the GNU
+General Public License version 3. In accordance with Section 7(b) of the GNU
+General Public License version 3, these Appropriate Legal Notices must retain
+the display of the "Powered by Dispage" logo. If the display of the logo is not
+reasonably feasible for technical reasons, the Appropriate Legal Notices must
+display the words "Powered by Dispage".
+
+2.2 Encrypted Files.  THE Encrypted Files ARE PROTECTED BY COPYRIGHT LAW.
+UNAUTHORIZED COPY, REVERSE ENGINEERING, DECRYPTION OR ANY ALTERATION OF
+ENCRYPTED FILES, OR ANY PORTION OF IT, MAY RESULT IN SEVERE CIVIL PENALTIES AND
+WILL BE PROSECUTED TO THE MAXIMUM EXTENT POSSIBLE UNDER THE LAW.
+
+
+3.0 Disclaimer of Warranty
+
+3.1 No Warranty on the Software.  THE SOFTWARE IS BEING DELIVERED TO YOU "AS IS"
+AND DISPAGE MAKES NO WARRANTY AS TO ITS USE OR PERFORMANCE. DISPAGE DOES NOT AND
+CANNOT WARRANT THE PERFORMANCE OR RESULTS YOU MAY OBTAIN BY USING THE SOFTWARE.
+DISPAGE MAKES NO WARRANTIES, CONDITIONS, REPRESENTATIONS, OR TERMS (EXPRESS OR
+IMPLIED WHETHER BY STATUTE, COMMON LAW, CUSTOM, USAGE OR OTHERWISE) AS TO ANY
+MATTER INCLUDING WITHOUT LIMITATION NON-INFRINGEMENT OF THIRD PARTY RIGHTS,
+MERCHANTABILITY, INTEGRATION, SATISFACTORY QUALITY, OR FITNESS FOR ANY
+PARTICULAR PURPOSE.
+
+3.2 No Warranty on the Website Services and Email Support.  DISPAGE DOES NOT
+WARRANT ANY OF THE Website Services AND THE Email Support, INCLUDING THE Key
+Refresh. NO WARRANTY IS GIVEN, EXPRESSLY OR IMPLIEDLY, THAT THE ABOVE-MENTIONED
+SERVICES WILL BE ERROR-FREE, UNINTERRUPTED OR WILL MEET ANY PARTICULAR CRITERIA
+OF ACCURACY, COMPLETENESS OR RELIABILITY OF INFORMATION, PERFORMANCE OR QUALITY.
+DISPAGE AND ITS LICENSORS ARE NOT RESPONSIBLE FOR TRANSMISSION ERRORS IN,
+CORRUPTION OF, OR THE SECURITY OF YOUR INFORMATION CARRIED OVER INTER EXCHANGE
+CARRIERS', LOCAL EXCHANGE CARRIERS', OR OTHER PROVIDERS' FACILITIES. YOU AGREE
+THAT IT WILL NOT IN ANY WAY HOLD DISPAGE RESPONSIBLE FOR ANY SELECTION OR
+RETENTION OF, OR THE ACTS OR OMISSIONS OF, THIRD PARTIES IN CONNECTION WITH THE
+SERVICE.
+
+
+4.0	Limitation of Liability
+
+4.1	Force Majeure.  NEITHER PARTY SHALL BE IN BREACH OF THIS AGREEMENT DUE TO
+FAILURE OF PERFORMANCE THAT ARISES OUT OF CAUSES BEYOND ITS REASONABLE CONTROL.
+
+4.2 Disclaimer of Consequential Damages.  TO THE MAXIMUM EXTENT PERMITTED BY
+APPLICABLE LAW, IN NO EVENT WILL DISPAGE BE LIABLE FOR ANY INDIRECT, SPECIAL,
+INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES ARISING OUT OF OR IN ANY WAY
+RELATING TO THIS AGREEMENT OR THE USE OF OR INABILITY TO USE THE SOFTWARE OR
+DOCUMENTATION INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK
+STOPPAGE, LOST PROFITS, LOSS OF DATA, COMPUTER FAILURE OR ANY AND ALL OTHER
+COMMERCIAL DAMAGES OR LOSSES EVEN IF ADVISED OF THE POSSIBILITY THEREOF AND
+REGARDLESS OF THE LEGAL OR EQUITABLE THEORY (CONTRACT, TORT (INCLUDING
+NEGLIGENCE) OR OTHERWISE) UPON WHICH THE CLAIM IS BASED.

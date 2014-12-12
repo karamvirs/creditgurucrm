@@ -1,0 +1,492 @@
+
+/*******************************************************************************
+ * This file is integral part of the project "Installer for Dispage Extension
+ * Manager" for SugarCRM.
+ * 
+ * "Installer for Dispage Extension Manager" is a project created by: 
+ * Dispage - Patrizio Gelosi
+ * Via A. De Gasperi 91 
+ * P. Potenza Picena (MC) - Italy
+ * 
+ * (Hereby referred to as "DISPAGE")
+ * 
+ * Copyright (c) 2010-2012 DISPAGE.
+ * 
+ * The contents of this file are released under the GNU General Public License
+ * version 3 as published by the Free Software Foundation that can be found on
+ * the "LICENSE.txt" file which is integral part of the SUGARCRM(TM) project. If
+ * the file is not present, see http://www.gnu.org/licenses or write to the Free
+ * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA.
+ * 
+ * You may not use the present file except in compliance with the License.
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied.  See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ * 
+ * The interactive user interfaces in modified source and object code versions
+ * of this program must display Appropriate Legal Notices, as required under
+ * Section 5 of the GNU General Public License version 3.
+ * 
+ * In accordance with Section 7(b) of the GNU General Public License version 3,
+ * these Appropriate Legal Notices must retain the display of the "Powered by
+ * Dispage" logo. If the display of the logo is not reasonably feasible for
+ * technical reasons, the Appropriate Legal Notices must display the words
+ * "Powered by Dispage".
+ * 
+ ******************************************************************************/
+
+@CHARSET "ISO-8859-1";
+
+#em-msg-header {
+	background-color: #B0B0C0;
+	padding: 4px;
+	font-weight: 700;
+	border-bottom: 1px solid #9090D0;
+}
+
+#em-msg-body td, #em-msg-body input, #em-msg-body div, #em-msg-body a, #em-msg-body span {
+	font-size:11px;
+}
+
+#em-msg-body table {
+	text-align: left;
+	width: 100%;
+}
+#grid3 .em-desc-row {
+	white-space: normal;
+}
+
+.em-msg-warning {
+	color:red;
+}
+
+.em-waiting-cont {
+	clear:left;
+	padding-bottom: 20px;
+}
+
+.em-waiting {
+	text-align: right;
+	float: right;
+}
+
+.em-waiting img {
+	padding-left: 4px;
+}
+
+.em-dialogue-icon {
+	float: left;
+}
+.em-waiting-text {
+	float: left;
+	text-align:left;
+	padding-bottom: 10px;
+}
+
+.em-error-text {
+	padding: 5px 0px 0px 15px;
+	float: left;
+}
+.em-error-text ul {
+	padding-left: 10px;
+	margin-left: 0px;
+}
+.em-error-text li {
+	list-style-type: disc;
+}
+.em-question-point {
+	background-image: url('../img/question.gif');
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin: 0;
+	width: 22px;
+	height: 16px;
+	cursor:pointer;
+}
+
+.em-warn-field {
+	color: red;
+	float: left;
+	padding-left: 4px;
+	font-weight: bold;
+}
+
+.em-error-msg {
+	color: red;
+	clear: both;
+	float: left;
+	font-weight: bold;
+	text-align: left;
+	padding: 10px 0px;
+	width:350px;
+}
+
+.em-login-field {
+	float: left;
+}
+
+.em-warn-field div {
+	padding-left: 4px;
+	float: left;
+}
+
+.em-input-row {
+	padding-bottom: 6px;
+}
+
+.em-warn-field-text {
+	padding-top: 4px;
+}
+
+.em-warn-field-img {
+	background-image:url('../img/wrn-field.png');
+	background-repeat: no-repeat;
+	background-color:white;
+}
+
+#switcher ul li {
+	list-style: none;
+}
+.ui-pg-div {
+	margin-left: 0 !important;
+	margin-right: 3px;
+	white-space: nowrap !important;
+}
+
+.classEMSugarVersions {
+	font-size:9px;
+	max-height: 42px;
+	overflow-y:auto;
+}
+
+.classEMSugarVersions span, .classEMLanguageCompatible span {
+	padding-left: 4px;
+	float: left;
+}
+
+.em-event-types {
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	height: 16px;
+}
+.em-packages-container {
+	display:inline-block;
+	position:relative;
+	width:100%;
+}
+.em-packages-buttons {
+	text-align: right;
+	padding: 10px 20px;
+	clear:both;
+}
+.em-packages-buttons-right {
+	float: right;
+	height: 35px;
+}
+.em-packages-buttons-left {
+	float: left;
+	height: 35px;
+}
+.em-packages-buttons-left form {
+	display: inline;
+}
+.em-rightup-link {
+	position:absolute;
+	right:25px;
+	text-align:right;
+	top:15px;
+}
+.em-rightup-link img {
+	border: 0;
+}
+.em-install-button {
+	font-size: 13px;
+	padding: 5px;
+	margin: 2px !important;
+	text-align: center;
+	width: 100px;
+}
+.em-wfree-button {
+	width: auto !important; 
+}
+.em-sugarver-highlighted, .em-sugarlang-highlighted {
+	color: red;
+	font-weight: bold;
+}
+.em-extension-icon {
+	background-color:#D6D6D6;
+	background-position:2px 2px;
+	background-repeat:no-repeat;
+	border:1px solid #909090;
+	height:52px;
+	margin:10px;
+	width:52px;
+	float:left;
+}
+.em-extension-desc {
+	float:left;
+	left:20px;
+	position:relative;
+	top:15px;
+	padding-bottom:20px;
+}
+#selectedExt {
+	height: 100px;
+}
+.em-register-point {
+	float:left;
+}
+.em-login-point {
+	float:left;
+	padding: 5px 0px;
+}
+.em-helper-container {
+	clear:both;
+}
+.em-helpers {
+	display: none;
+	height: 0px;
+	opacity: 0;
+	border: 1px solid #A3A3A0;
+	padding: 3px;
+	margin: 2px;
+	background-color:#E2E2E2;
+	width: 300px;
+	z-index: 2000;
+}
+.em-panel2-container {
+	margin-top:10px;
+	padding-top:10px;
+	border-top: 1px solid #A3A3A0;
+}
+.em-option-panel {
+	padding: 10px 5px;
+	margin-top:20px;
+}
+.em-option-theme-auto {
+	padding: 0 6px 0 3px;
+	margin-right:8px;
+	width:auto;
+}
+.em-option-theme div {
+	margin: 0 4px;
+	float: left;
+	width: 23px;
+	height: 20px;
+	border: 2px solid white;
+	cursor: pointer;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+.em-option-theme-selected {
+	border: 2px solid black !important;
+}
+.em-options-title {
+	background-color:#FFFFFF;
+	padding-left:4px;
+	position:relative;
+	top:-20px;
+	width:80px;
+	white-space: nowrap;
+}
+.em-options-table select {
+	min-width:100px;
+}
+.em-options-table td {
+	padding: 5px;
+}
+.em-login-options-title {
+	width:80px;
+}
+.em-license-title {
+	color: red;
+	font-weight: bold;
+	padding-bottom: 10px;
+	width:500px;
+}
+.em-license-body {
+	padding-bottom: 10px;
+}
+.question iframe {
+	width: 100%;
+}
+.dem-panels {
+	padding-top: 10px;
+}
+.em-license-choice-table td {
+	vertical-align: top;
+}
+.em-admin-title {
+	height: 30px;
+}
+.em-admin-title h2 {
+	float: left;
+}
+.em-admin-title span {
+	float: right;
+}
+.em_select_all {
+	margin-left:1px;
+}
+.em-extoptions-close {
+	border: none;
+}
+.em-extoptions-label {
+	float:left;
+}
+.em-extoptions-elem {
+	position:absolute;
+	bottom:1px;
+	right:0px;
+}
+.em-extoptions-line {
+	position:relative;
+	clear:both;
+	margin-bottom:10px;
+	display:inline-block;
+	width:100%;
+}
+.em-extoptions-underline {
+	border-bottom:1px dotted #A0A0A0;
+}
+.em-extoptions-panels {
+	clear:both;
+	border-color:#A0A0A0 !important;
+	padding:10px;
+	margin-bottom: 20px;
+}
+.em-extoptions-elem > input.button {
+	margin: 2px;
+}
+.em-extoptions-buttons {
+	display:inline-block;
+	width:100%;
+	margin-top:10px;
+}
+.button {
+	cursor:pointer;
+}
+.em-boxy-wait {
+	position:relative;
+	text-align:center;
+	top:45%;
+}
+.em-extoptions-line input[type=text] {
+	text-align:right;
+}
+.em-extoptions-line input[type=checkbox] {
+	margin:0px;
+}
+.em-enter-serial {
+	width: 40px !important;
+	text-transform:uppercase;
+}
+.proxy-title {
+	font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+	cursor: pointer;
+}
+.proxy-title > div {
+	float: left;
+}
+.proxy-title > div.proxy-title-text {
+	margin: 2px;
+	padding: 0 2px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.proxy-title > div.proxy-title-text:hover {
+	background-color: #222222;
+	color: #FFFFFF;
+}
+#proxy-settings {
+	display: none;
+}
+#proxy-settings td.proxy-label {
+	padding-left: 25px;
+}
+#treegrid2 td select {
+	width:100%;
+}
+#treegrid2 tr {
+	width:100%;
+}
+#em-waiting-generic {
+	position:fixed; 
+	top:50%; 
+	left: 50%;
+}
+.wtooltip-box {
+	width:350px;
+	z-index:99999999 !important;
+	font-size:11px;
+	border-radius:5px 5px 5px 5px;
+	-moz-border-radius:5px 5px 5px 5px;
+	-webkit-border-radius:5px 5px 5px 5px;
+}
+.wtooltip-box div, .wtooltip-box span {
+	font-size:11px;
+}
+.wtooltip-box a[href*="http://"], .wtooltip-box a.em-external-link {
+	font-size:11px;
+	background:url("../img/externalLink.png") no-repeat scroll right -2px transparent;
+	display:inline-block;
+	padding-right:12px;
+}
+.wtooltip-box div {
+	margin-bottom:5px;
+}
+.wtooltip-box ul {
+	padding: 0;
+	margin-left: 8px;
+}
+.wtooltip-box ul li {
+	list-style-type: disc;
+}
+.wtooltip {
+	padding: 0 !important;
+	margin: 0 0 0 4px !important;
+	min-width: 0 !important;
+	background-image: url('../img/questionPin.gif') !important;
+}
+img.wtooltip {
+	background-image: none !important;
+}
+.wtooltip-info {
+	text-align: right;
+	margin-top:5px;
+	font-style: italic;
+}
+#emPanel {
+	position: relative;
+}
+#emDEMWaiting {
+	background-color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index:10;
+}
+#em-waiting-generic .emDEMWaitingMsg {
+	font-weight: bold;
+    left: -7px;
+    position: relative;
+    top: -18px;
+}
+#ui-datepicker-div {
+	display:none;
+}
+.ui-widget-content.ui-corner-all, .ui-widget-content .ui-corner-all {
+	border-radius: 4px 4px 4px 4px !important;
+}

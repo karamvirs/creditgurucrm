@@ -1,0 +1,186 @@
+.msDetailInline {
+	cursor:pointer;
+	border: 0 none;
+}
+.ms-group-icons {
+	position:absolute;
+	left:0;
+	top:0;
+}
+tr.ui-search-toolbar input {
+	margin-top: 3px;
+}
+tr.ui-search-toolbar select {
+	margin-top: 2px;
+}
+.ui-jqgrid tr.ui-search-toolbar th{
+	border-top-style: none !important;
+}
+.ui-pg-div {
+	margin-left: 0 !important;
+	margin-right: 3px;
+	white-space: nowrap !important;
+}
+.ui-pg-div > span.ui-icon {
+	margin: 0 3px !important;
+}
+.ui-pg-table td {
+	white-space: nowrap !important;
+}
+.ms-advanced-actions {
+	display: inline-block;
+	margin: 4px 0px 0px 3px;
+	line-height: 8px;
+	width: 8px;
+	height: 8px;
+	cursor:pointer;
+}
+.ms-advanced-buttons {
+	display: inline-block;
+	margin: 0px 0px 0px 4px;
+	line-height: 16px;
+	width: 16px;
+	height: 16px;
+	cursor:pointer;
+}
+.ms-advanced-buttons-restorelayout {
+	background-image: url('../../ModuleSurfer/img/restore-layout.png');
+}
+.ms-advanced-buttons-savelayout {
+	background-image: url('../../ModuleSurfer/img/save-layout.png');
+}
+.ms-advanced-buttons-filter {
+	background-image: url('../../ModuleSurfer/img/toggle-filter.png');
+}
+.ms-advanced-buttons-autoload {
+	background-image: url('../../ModuleSurfer/img/auto-load.png');
+}
+.ms-advanced-buttons-autowidth {
+	background-image: url('../../ModuleSurfer/img/auto-width.png');
+}
+.ms-advanced-buttons-autoshrink {
+	background-image: url('../../ModuleSurfer/img/auto-shrink.png');
+}
+.ms-advanced-buttons-changecols {
+	background-image: url('../../ModuleSurfer/img/change-columns.png');
+}
+.ms-advanced-actions-down {
+	background-image: url('../../../../themes/default/images/advanced_search.gif');
+}
+.ms-advanced-actions-up {
+	background-image: url('../../../../themes/default/images/basic_search.gif');
+}
+.ms-advanced-actions-head {
+	height: 18px;
+	position:relative;
+}
+.ms-advanced-actions-caption {
+	cursor:pointer;
+}
+.ms-advanced-actions-caption, .ms-advanced-actions-body {
+	margin: 3px;
+}
+.ms-advanced-actions-body {
+	display: none;
+	padding: 5px 0px;
+}
+.ms-advanced-actions-item {
+	display: inline-block;
+	padding:3px;
+	white-space:nowrap;
+}
+.ms-advanced-actions-enabled:hover {
+	background-color:#D4D4D4;
+}
+.ms-inline-relate {
+	width:98% !important;
+}
+.ms-flname {
+	white-space: nowrap !important;
+}
+.ms-switch-labels {
+	background-color:#FFFFFF;
+	font-weight:bold;
+	border:1px solid #CCCCCC;
+	padding:0 2px;
+}
+.ms-row-actions {
+	white-space: nowrap;
+	text-align: center;
+}
+.ms-row-actions a {
+	margin: 2px;
+}
+.ms-btn-disabled {
+	opacity: 0.5;
+	filter:Alpha(Opacity=50);
+}
+.ms-btn-disabled span {
+	cursor:default !important;
+}
+td.form-view-data {
+	white-space: normal !important;
+}
+.ms-head-tooltip {
+	position:absolute;
+	right:0;
+	top:3px;
+}
+.ms-layout-tooltip {
+	position:absolute;
+	right:0;
+	top:1px;
+}
+
+
+#gbox_scroll-listview {
+	margin-top: 10px;
+}
+#pscrolling_left > table {
+	width: 300px !important;
+
+
+	table-layout: auto !important;
+}
+#scroll-listview img {
+	border: 0 none;
+}
+#scroll-listview td td {
+	border: 0 none;
+}
+#scroll-listview .star {
+	float: none;
+}
+#pscrollAdvanced {
+	margin-top: 5px;
+}
+#FrmGrid_scroll-listview {
+	min-width: 300px;
+}
+#ms-check-all-sel {
+	display: inline-block;
+	width: 10px;
+	height: 16px;
+	background: url('../../../../themes/default/images/MoreDetail.png') no-repeat right;
+	cursor: pointer;
+}
+#ms-select-records {
+	width: 200px !important;
+	display: none;
+}
+#ms-select-records > div {
+	margin: 2px 0;
+	width: 175px;
+	height: 19px;
+}
+#ms-select-records .ui-button-text {
+	padding: 2px 5px;
+	text-align: left;
+}
+#jqgh_cb {
+	height: 19px;
+}
+#gview_scroll-listview .ui-jqgrid-title {
+	font-size: 14px;
+    line-height: 14px;
+}

@@ -1,0 +1,38 @@
+<?php
+// created: 2014-12-02 11:22:43
+$dictionary["pm_PortalMessages"]["fields"]["pm_portalmessages_contacts"] = array (
+  'name' => 'pm_portalmessages_contacts',
+  'type' => 'link',
+  'relationship' => 'pm_portalmessages_contacts',
+  'source' => 'non-db',
+  'module' => 'Contacts',
+  'bean_name' => 'Contact',
+  'vname' => 'LBL_PM_PORTALMESSAGES_CONTACTS_FROM_CONTACTS_TITLE',
+  'id_name' => 'pm_portalmessages_contactscontacts_ida',
+);
+$dictionary["pm_PortalMessages"]["fields"]["pm_portalmessages_contacts_name"] = array (
+  'name' => 'pm_portalmessages_contacts_name',
+  'type' => 'relate',
+  'source' => 'non-db',
+  'vname' => 'LBL_PM_PORTALMESSAGES_CONTACTS_FROM_CONTACTS_TITLE',
+  'save' => true,
+  'id_name' => 'pm_portalmessages_contactscontacts_ida',
+  'link' => 'pm_portalmessages_contacts',
+  'table' => 'contacts',
+  'module' => 'Contacts',
+  'rname' => 'name',
+  'db_concat_fields' => 
+  array (
+    0 => 'first_name',
+    1 => 'last_name',
+  ),
+);
+$dictionary["pm_PortalMessages"]["fields"]["pm_portalmessages_contactscontacts_ida"] = array (
+  'name' => 'pm_portalmessages_contactscontacts_ida',
+  'type' => 'link',
+  'relationship' => 'pm_portalmessages_contacts',
+  'source' => 'non-db',
+  'reportable' => false,
+  'side' => 'right',
+  'vname' => 'LBL_PM_PORTALMESSAGES_CONTACTS_FROM_PM_PORTALMESSAGES_TITLE',
+);

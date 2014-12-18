@@ -104,7 +104,17 @@ array (
         ),
         3 => 
         array (
-          0 => 'assigned_user_name',
+          0 => 
+          array (
+            'name' => 'created_by_name',
+            'label' => 'LBL_CREATED',
+          ),
+          1 => 'assigned_user_name',
+        ),
+        4 => 
+        array (
+          0 => '',
+          1 => '',
         ),
       ),
     ),

@@ -54,15 +54,13 @@ array (
         array (
           0 => 
           array (
-            'name' => 'name',
-            'displayParams' => 
-            array (
-              'required' => true,
-            ),
+            'name' => 'task_type_c',
+            'studio' => 'visible',
+            'label' => 'LBL_TASK_TYPE',
           ),
           1 => 
           array (
-            'name' => 'status',
+            'name' => 'name',
             'displayParams' => 
             array (
               'required' => true,
@@ -73,12 +71,15 @@ array (
         array (
           0 => 
           array (
-            'name' => 'contact_name',
-            'label' => 'LBL_CONTACT_NAME',
+            'name' => 'priority',
+            'displayParams' => 
+            array (
+              'required' => true,
+            ),
           ),
           1 => 
           array (
-            'name' => 'priority',
+            'name' => 'status',
             'displayParams' => 
             array (
               'required' => true,
@@ -109,7 +110,11 @@ array (
         ),
         3 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'contact_name',
+            'label' => 'LBL_CONTACT_NAME',
+          ),
           1 => 
           array (
             'name' => 'assigned_user_name',

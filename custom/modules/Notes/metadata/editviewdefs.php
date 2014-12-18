@@ -47,7 +47,7 @@ function deleteAttachmentCallBack(text)
           'panelDefault' => 'expanded',
         ),
       ),
-      'syncDetailEditViews' => false,
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -96,7 +96,11 @@ function deleteAttachmentCallBack(text)
             'name' => 'assigned_user_name',
             'label' => 'LBL_ASSIGNED_TO',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'created_by_name',
+            'label' => 'LBL_CREATED_BY',
+          ),
         ),
       ),
     ),

@@ -1,5 +1,5 @@
 <?php
-// created: 2014-12-11 10:47:02
+// created: 2014-12-17 07:43:21
 $mod_strings = array (
   'LBL_NAME' => 'Creditor',
   'LBL_ACCOUNT_NO' => 'Account#',
@@ -14,4 +14,8 @@ $mod_strings = array (
   'LBL_QUOTE' => 'quote',
   'LBL_LEAD' => 'Lead',
   'LBL_CLIENT' => 'client',
+  'LBL_EXPERIAN_OLD' => 'experian old',
+  'LBL_EQUIFAX_OLD' => 'equifax old',
+  'LBL_TRANSUNION_OLD' => 'transunion old',
+  'LBL_VIEW_STATUS' => 'view status',
 );

@@ -19,7 +19,7 @@ class CustomContactsViewDetail extends ContactsViewDetail {
   }
 
   public function display(){
-  	
+  	global $db;
 
     $balance = $this->bean->quoted_amount_c - $this->bean->paid_amount_c;
     $request_amount = ($this->bean->quoted_amount_c) ? $this->bean->quoted_amount_c / 3 : 0;
@@ -27,6 +27,22 @@ class CustomContactsViewDetail extends ContactsViewDetail {
     //assign value
     $this->ss->assign("request_amount", $request_amount);    
 	  // my custom code here
+	  
+	   
+            $module ='payment';
+             $sql = "SELECT * FROM cet_customemailtemplates as cs JOIN cet_customemailtemplates_cstm as cst ON cs.id = cst.id_c WHERE cst.module_c = '$module'";
+			$res = $db->query($sql);
+			
+			
+			$dropbox .="<select name='selected_template' id='selected_template'>";
+			while ($row1 = $db->fetchByAssoc($res)) {
+                $dropbox .= "<option id='selected_template' value='".$row1['id']."'>".$row1['name']."</option>";
+                        
+            }
+			 $dropbox .="</select>";
+		 $this->ss->assign("dropbox", $dropbox); 
+			
+		
 
 	  // call up the ContactsViewDetail Code to run the display after we have called
 	  // all of our custom code.
@@ -139,10 +155,11 @@ class CustomContactsViewDetail extends ContactsViewDetail {
 	function send_payment_request_email(){ 
     email = $('#client_email_req').val();
     amount = $('#request_amount').val();
+	template = $('#selected_template').val();
     if(amount >  $balance ){
         alert('Requested payment amount cannot be greater than the balance amount.');
         return false;       
     }
-    $.post('send_payment_request_email.php', {email: email, id: '".$this->bean->id."', module: 'Contacts', amount: amount}, function(data){ $('#email_err').html(data); if(data == 'Email sent'){ $('#payment_modal').hide() } else{}  }) }</script>";
+    $.post('send_payment_request_email.php', {email: email, id: '".$this->bean->id."', module: 'Contacts', amount: amount ,template: template}, function(data){ $('#email_err').html(data); if(data == 'Email sent'){ $('#payment_modal').hide() } else{}  }) }</script>";
   }
 }

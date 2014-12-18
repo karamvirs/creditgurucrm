@@ -1,6 +1,6 @@
 <?php
 ini_set('display_errors', 'Off');
-ini_set('memory_limit', '256M');
+ini_set('memory_limit', '512M');
 
 error_reporting(0);
 

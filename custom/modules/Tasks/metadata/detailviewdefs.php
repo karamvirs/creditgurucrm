@@ -111,9 +111,19 @@ array (
         array (
           0 => 
           array (
+            'name' => 'created_by_name',
+            'label' => 'LBL_CREATED',
+          ),
+          1 => 
+          array (
             'name' => 'assigned_user_name',
             'label' => 'LBL_ASSIGNED_TO',
           ),
+        ),
+        4 => 
+        array (
+          0 => '',
+          1 => '',
         ),
       ),
     ),

@@ -1,5 +1,5 @@
 <?php
-// created: 2014-12-10 15:11:51
+// created: 2014-12-15 10:18:56
 $mod_strings = array (
   'LBL_SSN' => 'SSN',
   'LBL_EQUIFAX_ID' => 'Equifax id',
@@ -38,4 +38,5 @@ $mod_strings = array (
   'LBL_ROUTE' => 'Route',
   'LBL_AFFILIATE' => 'Affiliate',
   'LBL_LIST_ASSIGNED_USER' => 'Assigned To',
+  'LBL_ADDR_ADDRESSES_CONTACTS_FROM_ADDR_ADDRESSES_TITLE' => 'Addresses',
 );

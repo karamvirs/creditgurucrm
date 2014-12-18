@@ -1,21 +1,9 @@
 <?php
 $listViewDefs ['Tasks'] = 
 array (
-  'SET_COMPLETE' => 
-  array (
-    'width' => '3%',
-    'label' => 'LBL_LIST_CLOSE',
-    'link' => true,
-    'sortable' => false,
-    'default' => true,
-    'related_fields' => 
-    array (
-      0 => 'status',
-    ),
-  ),
   'NAME' => 
   array (
-    'width' => '20%',
+    'width' => '40%',
     'label' => 'LBL_LIST_SUBJECT',
     'link' => true,
     'default' => true,
@@ -53,7 +41,7 @@ array (
     'type' => 'text',
     'label' => 'LBL_DESCRIPTION',
     'sortable' => false,
-    'width' => '42%',
+    'width' => '20%',
     'default' => true,
   ),
   'CREATED_BY_NAME' => 
@@ -70,6 +58,18 @@ array (
     'width' => '10%',
     'label' => 'LBL_DATE_ENTERED',
     'default' => true,
+  ),
+  'SET_COMPLETE' => 
+  array (
+    'width' => '3%',
+    'label' => 'LBL_LIST_CLOSE',
+    'link' => true,
+    'sortable' => false,
+    'default' => false,
+    'related_fields' => 
+    array (
+      0 => 'status',
+    ),
   ),
 );
 ?>

@@ -1,9 +1,10 @@
-tinymce.init({selector: 'textarea',entity_encoding : 'raw'});
+tinymce.init({selector: 'textarea', entity_encoding: 'raw'});
 $(function () {
     var tags = [];
     tags.clients = '{{first_name}}, {{last_name}}, {{report}}, {{quoted_amount}}, {{paid_amount}}, {{balance_amount}},{{attachment}}';
     tags.leads = '{{first_name}}, {{last_name}}, {{report}}, {{quoted_amount}}, {{paid_amount}}, {{balance_amount}},{{attachment}}';
     tags.payment = '{{first_name}}, {{last_name}}, {{report}}, {{quoted_amount}}, {{paid_amount}}, {{balance_amount}} ,{{paid}}, {{link}}';
+    tags.quote = '{{first_name}}, {{last_name}}, {{attachment}}, {{quote}}, {{quote_50_50}}';
     $('#module_c').change(function () {
         $('#tags_span').remove();
         sel = $(this).val();

@@ -72,35 +72,12 @@ array (
         ),
         3 => 
         array (
-          0 => 
+          0 => 'assigned_user_name',
+          1 => 
           array (
             'name' => 'created_by_name',
             'label' => 'LBL_CREATED_BY',
           ),
-          1 => 
-          array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'modified_by_name',
-            'label' => 'LBL_MODIFIED_BY',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'label' => 'LBL_DATE_MODIFIED',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-          ),
-        ),
-        5 => 
-        array (
-          0 => 'assigned_user_name',
-          1 => '',
         ),
       ),
     ),

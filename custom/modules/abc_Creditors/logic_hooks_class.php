@@ -5,7 +5,8 @@ class CreditorsLogic {
 	function creditors($bean, $event, $arguments){
 
 		global $db;
-		//echo "<pre>"; print_r($bean);
+		//echo "<pre>"; print_r($_REQUEST);
+		//die();
 		 $ID=$bean->id;
 		//echo $bean->status;
 		//die("her");
@@ -26,7 +27,7 @@ class CreditorsLogic {
 		$sql2="SELECT * FROM `email_addresses` WHERE `id` ='$email_id' and  `deleted`='0'";
 		$result2 = $db->query($sql2);
 		$row2 = $db->fetchByAssoc($result2);
-		 echo $email_address = $row2['email_address'];
+		 $email_address = $row2['email_address'];
 			
 		
 		$sql3="SELECT * FROM `abc_creditors` WHERE `id`= '$ID'";
@@ -61,8 +62,9 @@ class CreditorsLogic {
 			}	
 			
 		}else if( $row3['experian']!=$bean->experian){
-		
-		$to = $email_address;
+			$bean->experian_old_c = $row3['experian'];
+			$bean->view_status_c = 1;
+			$to = $email_address;
 			$subject = "Creditors Experian";
 			$message = "
 			<html>
@@ -70,7 +72,7 @@ class CreditorsLogic {
 			<title>Creditors Experian</title>
 			</head>
 			<body>
-			<p>Hi ".$bean->abc_creditors_contacts_name." ,<br /><br /> Your creditors experian has been changed by Credit guru. You can login at <a href='http://192.232.214.244/sugarcrm/portal/'>portal</a> for further details.<br />Creditor Name:".$bean->name."<br/> Experian:".$bean->experian."<br/>Thanks, <br />Credit Guru</p>
+			<p>Hi ".$bean->abc_creditors_contacts_name." ,<br /><br /> Your creditors experian has been changed by Credit guru. You can login at <a href='http://192.232.214.244/sugarcrm/portal/'>portal</a> for further details.<br />Creditor Name:".$bean->name."<br/> Experian:".$bean->experian."::::::".$row3['experian']."<br/>Thanks, <br />Credit Guru</p>
 			</body>
 			</html>
 			";
@@ -89,7 +91,10 @@ class CreditorsLogic {
 		
 		
 		}else if( $row3['equifax']!=$bean->equifax){
-		
+
+
+			$bean->equifax_old_c =$row3['equifax'];
+			$bean->view_status_c = 1;
 		$to = $email_address;
 			$subject = "Creditors Equifax";
 			$message = "
@@ -117,6 +122,8 @@ class CreditorsLogic {
 		
 		
 		}else if( $row3['transunion']!=$bean->transunion){
+		$bean->transunion_old_c =$row3['transunion'];
+		$bean->view_status_c = 1;
 		
 		$to = $email_address;
 			$subject = "Creditors Transunion";
@@ -145,13 +152,9 @@ class CreditorsLogic {
 		
 		
 		}
-		
-		
-		
-		
-		
-		
 	}
+
+
 	
 }
 

@@ -45,19 +45,16 @@ class LeadsViewDetail extends ViewDetail {
     function display() {
         global $sugar_config;
         ?>
-        <form action='' style="width: 8%; left: 20%; position: relative;">
-            <input type='hidden' name='email' id='email12' value='<?php echo $this->bean->email1; ?>' >
-            <input type='button' value='SEND QUOTE' name='send' id='sent_detail'>
-        </form>        
-
-        <form action='' style="width: 8%; left: 50%; position: relative;">
-            <input type='hidden' name='email' id='email12' value='' >
+        <div style="width: 20%; margin:0px auto">
+            <input type='button' value='Send Quote' name='send' id='sent_detail' onclick=" $('#quotes_table').show();">
             <input type='button' value='Show Templates' name='send' id='sent_detail' onclick=" $('#templates_table').show();">
-        </form>
+        </div>        
+
 
         <script>
             $(function () {
-                $('#sent_detail').click(function () {
+
+               /* $('#sent_detail').click(function () {
 
                     var email = $("#email12").val();
 
@@ -73,20 +70,30 @@ class LeadsViewDetail extends ViewDetail {
                             }
                         }
                     });
-                });
-                
+                }); */
+
                 /* Code for submiting the submit form that create and download the PDF from email templates */
-                $('input[name=download_pdf]').live('click',function(){
-                    
+                $('input[name=download_pdf]').live('click', function () {
                     $('input[name=mail_or_download]').val('download');
                     $('form[name=mailtemplates_form]').submit();
                 });
-                
-                $('input[name=send_email]').live('click',function(){
+
+                $('input[name=send_email]').live('click', function () {
                     $('input[name=mail_or_download]').val('mail');
                     $('form[name=mailtemplates_form]').submit();
                 });
                 
+                /* Code for submiting the submit form that create and download the PDF from quote templates */
+                 $('input[name=quote_download_pdf]').live('click', function () {
+                    $('input[name=quote_mail_or_download]').val('download');
+                    $('form[name=quotes_form]').submit();
+                });
+
+                $('input[name=quote_send_email]').live('click', function () {
+                    $('input[name=quote_mail_or_download]').val('mail');
+                    $('form[name=quotes_form]').submit();
+                });
+
             });
         </script>
         <?php
